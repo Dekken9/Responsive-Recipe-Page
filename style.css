@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 16px ;
+}
+
+
+.container{
+   /* background-color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 500;*/
+    /*width: 800px;*/ 
+    max-width: 650px;
+    padding: 40px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    height: 275px;
+    /*height: 200px;*/
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+h2{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    margin-bottom: 2px;
+    color: hsl(24, 5%, 18%);
+    margin-top: 5px;
+}
+
+p{
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-size: 14px; 
+    margin-bottom: 25px;   
+    color: hsl(30, 10%, 34%);
+    line-height: 1.5;
+}
+
+#prep-time{
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    padding: 5px 30px;
+    color: hsl(332, 51%, 32%);
+}
+
+ #title{
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    color: hsl(332, 51%, 32%);
+}
+
+#prep-time ul{
+    padding-left: 20px;
+
+}
+
+#prep-time li{
+    font-weight: 400;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    color: hsl(30, 10%, 34%);
+}
+
+#prep-time li::marker {
+    color: hsl(332, 51%, 32%); /* Set the marker color (bullet)*/
+    font-size: 10px;
+}
+
+
+
+/* heading 3 */
+.sub{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-size: 25px; 
+    color: hsl(14, 45%, 36%);
+}
+
+/* INGREDIENTS */
+#Ingredients{
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc   ;
+}
+
+#Ingredients li::marker {
+    color: hsl(14, 45%, 36%); /* Set the marker color (bullet)*/
+    font-size: 10px;
+}
+
+#Ingredients  ul{
+    padding-left: 20px;
+    margin-top: -10px;
+}
+#Ingredients li{
+    color: hsl(30, 10%, 34%);   
+    font-weight: 400;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+/*INSTRCUTIONS*/
+#Instructions{
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc   ;
+}
+
+#Instructions li::marker {
+    color: hsl(14, 45%, 36%); /* Set the marker color (bullet)*/
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#Instructions ol{
+    padding-left: 20px;
+    margin-top: -10px;
+}
+#Instructions li{
+    color: hsl(30, 10%, 34%);   
+    font-weight: 400;
+    padding-left: 16px;
+    margin-bottom: 10px;
+}
+/* NUTRITION*/
+
+#Nutrition p{
+    margin-top: -10px;
+}
+table{
+    width: 100%;
+  border-collapse: collapse;
+  margin-top: -15px;
+
+}
+
+#row{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+
+ td {
+    font-weight: bolder;
+    text-align: left;
+    color: hsl(14, 45%, 36%);
+  }
+  
+  th {
+    padding: 10px;
+    font-family: "Outfit", sans-serif;
+    color: hsl(30, 10%, 34%);
+    font-weight: normal;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 16px;
+  }
+
+/*MEDIA QUERIES*/
+/* Mobile styles (375px) */
+
+@media only screen and (max-width: 768px) {
+    /* Styles for screens smaller than 768px */
+    body {
+      padding: 20;
+    }
+  
+    img{
+    object-fit: cover;
+    height: 170px;
+    border-radius: 0;
+    }
+    .container {
+      padding: 0px;
+      margin: 0 auto;
+    }
+
+    h2{
+        padding-left: 20px;
+    }
+    p{
+        font-size: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #prep-time{
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 25px;
+    }
+    #Ingredients{
+        padding-left: -10px;
+        padding-right: -10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc ;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    #Instructions{
+        padding-left: -10px;
+        padding-right: -10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc ;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    #Nutrition{
+        padding-left: -10px;
+        padding-right: -10px;
+        padding-bottom: 20px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    #Nutrition p{
+        font-size: 15px;
+        padding: 0;
+    }
+  }
+
+ 
+
+
